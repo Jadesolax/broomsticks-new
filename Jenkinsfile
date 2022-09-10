@@ -13,7 +13,7 @@ pipeline{
         stage('production'){
             steps{
                 sh '''
-                    sudo ssh -i /var/lib/jenkins/demo.pem -t -o StrictHostKeyChecking=no ubuntu@ec2-13-40-52-109.eu-west-2.compute.amazonaws.com
+                    sudo ssh -i /var/lib/jenkins/demo.pem -t -o StrictHostKeyChecking=no ubuntu@ec2-18-134-128-209.eu-west-2.compute.amazonaws.com
                     cd /var/www
                     sudo rm -rf html
                     sudo mkdir html
